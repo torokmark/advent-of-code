@@ -1,7 +1,7 @@
 current = 0
 frequencies = [] << current
 
-curr_freqs = File.readlines('day01.input').map { |x| x.to_i }
+curr_freqs = File.readlines('input').map { |x| x.to_i }
 
 curr_freqs.cycle do |freq|
   current += freq

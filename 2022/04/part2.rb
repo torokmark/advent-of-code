@@ -8,7 +8,6 @@ def solve(lines)
     .map { |line| line.first.to_a & line.last.to_a }
     .select { |e| !e.empty? }
     .count
-    
 end
 
 file = File.open("input.txt")

@@ -12,7 +12,7 @@ def solve(lines)
     cmds = lines.clone
     loop do
       cmd, val = cmds.shift.split
-      p "~~> `#{cmd}` `#{val}`"
+      #p "~~> `#{cmd}` `#{val}`"
       if cmd == "addx"
         cnt += 2
         break if cnt >= cycle
@@ -21,7 +21,7 @@ def solve(lines)
         cnt += 1
         break if cnt >= cycle
       end
-      p "#{cnt} #{register}"
+      #p "#{cnt} #{register}"
     end
     results << register * cycle
   end

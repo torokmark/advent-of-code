@@ -2,7 +2,7 @@
 
 nums = File.read('input.txt').split.map { |x| x.to_i }
 
-p nums
+# p nums
 
 nums.each_with_index do |value, idx|
   idx.upto(nums.length - 1) do |i|
